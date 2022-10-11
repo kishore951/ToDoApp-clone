@@ -11,15 +11,15 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr *ngFor="let i of todoData">
+                  <tr *ngFor="let i of todoList">
                     
                     <td>{{i.id}}</td>
                     <td>{{i.title}}</td>
-                    <td *ngIf="i.completed">Completed <div class="alert alert-success" role="alert">
-                        
+                    <td *ngIf="i.completed"><div class="alert alert-success" role="alert">
+                       Completed 
                       </div></td>
-                    <td *ngIf="! i.completed">Not Completed <div class="alert alert-danger" role="alert">
-                        
+                    <td *ngIf="! i.completed"><div class="alert alert-danger" role="alert">
+                        Not Completed
                       </div></td>
                   
                 </tbody>
